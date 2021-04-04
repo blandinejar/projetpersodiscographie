@@ -1,0 +1,200 @@
+body {
+    font-family: sans-serif;
+    background-color: #90d6e7;
+    
+}
+
+#container {
+    width: 900px;
+    margin: 0px auto;
+    background-color: #B2CEDE;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #6DC0D5;
+    position:fixed;
+    width: 900px;
+    color: #888;
+    z-index: 1;
+    top: 0;
+    margin: auto auto;
+}
+
+.header__title {
+    font-size: 2.5em;
+    padding: 0.6em;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 3px;
+    color: #ad7a99;
+    text-shadow: 5px 2px 8px #888;
+}
+
+/* .album__test {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.album {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: 1px solid #ad7a99;
+    padding: 0.7em;
+    margin: 1.5em 0.5em;
+    transition: all .5s;
+    background-color: #8cdfb8;
+}
+
+.album:hover {
+    box-shadow: 0 0 10px #000;
+}
+
+.album__image img {
+    max-width: 100%;
+    filter: none;
+    -webkit-filter: grayscale(0);
+    transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -webkit-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+    padding-bottom: 8px;
+
+}
+
+.album__image img:hover {
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+
+}
+    
+
+
+.album__content__name {
+    
+    font-size: 1em;
+    padding: 0.3em 0;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #ad7a99;
+    border-radius: 10px;
+    transition: all 0.7s ease-in-out;
+    
+}
+
+.album__content__name:hover {
+    background-color: #d89ec1;
+    color: #ddd;
+}
+
+
+.album__content__releaseyear {
+    font-family: 'BenchNine', sans-serif;
+    letter-spacing: 0.3em;
+    font-size: 2em;
+    background-color:#e9b2d3;
+    border-radius: 17px;
+    padding: 0 0.6em;
+    padding-right: 5px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+
+/* .album__content__releaseyear {
+    font-family: 'BenchNine', sans-serif;
+    letter-spacing: 0.3em;
+    font-size: 2em;
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 20px;
+    background-color:#e9b2d3;
+    border-radius: 10px;
+    padding: 0 0.5em;
+    padding-right: 5px;
+} */
+
+main {
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    background-color: #7ddd9a;
+}
+
+footer {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 0.8em;
+    background-color: #7ddd9a;
+    text-align: center;
+    color: #ad7a99;
+    padding: 20px;
+    border-top:#ad7a99 thick double;
+    line-height: 2em;
+    
+    
+
+}
+
+.footerdisclaimer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    font-size: 0.8em;
+}
+
+
+.logospotify {
+
+    margin-top: auto;
+    /* padding: 10px; */
+    width: 50px;
+    /* transform: translateY(-100%); 
+    display: inline-block;
+    position: absolute;
+    position: relative;
+    left: 50%; 
+    transform: translateX(-50%); */
+    filter: drop-shadow(8px 8px 8px black);
+   
+}
+
+
+
+li {
+    font-family: 'BenchNine', sans-serif;
+    list-style: circle;
+    margin-left: 1.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+li:hover {
+    list-style: disc;
+    transform: scale(1.1);
+    font-weight: bold;
+    
+    
+}
+
+
+
+::selection {
+    background: #88c480; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #88c480; /* Gecko Browsers */
+  }
